@@ -49,7 +49,17 @@ export default function App() {
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
+
+        <RecoveryDialog
+          isOpen={isShieldModalOpen}
+          onClose={() => setIsShieldModalOpen(false)}
+          profile={profile}
+          isDarkMode={isDarkMode}
+          onActivateShield={activateShield}
+          onRecoverMissedDay={recoverMissedDay}
+        />
       </MobileContainer>
     </BrowserRouter>
   );
 }
+
