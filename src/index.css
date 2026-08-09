@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  /* Editorial Color Palette */
+  --color-ab-bg-light: #fafaf9; 
+  --color-ab-bg-dark: #18181b; 
+  --color-ab-surface-light: #ffffff;
+  --color-ab-surface-dark: #27272a; 
+  
+  /* Brand Accent: Warm Tangerine */
+  --color-ab-accent: #f97316; 
+  --color-ab-accent-hover: #ea580c; 
+  
+  /* Semantic States */
+  --color-ab-success: #10b981; 
+  --color-ab-warning: #f59e0b; 
+  --color-ab-danger: #ef4444; 
+}
+
+@layer base {
+  body {
+    @apply antialiased text-slate-900 bg-[var(--color-ab-bg-light)];
+  }
+  
+  /* Global reset for overly rounded AI corners */
+  * {
+    @apply border-slate-200;
+  }
+}
