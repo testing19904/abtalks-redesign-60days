@@ -31,7 +31,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ isDarkMode }) => {
           onClick={() => navigate("/dashboard")}
           className="w-full py-4 px-6 bg-[#f97316] hover:bg-[#ea580c] text-white font-bold text-sm tracking-wide transition-colors flex items-center justify-between gap-3 active:scale-[0.98]"
         >
-          <span>Start Day 1</span>
+          <span>Start Building</span>
           <ArrowRight className="w-4 h-4" />
         </button>
       </section>
