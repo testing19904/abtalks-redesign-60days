@@ -8,6 +8,7 @@ import { Navbar } from "./components/Navbar";
 import { LandingPage } from "./pages/LandingPage";
 import { DashboardPage } from "./pages/DashboardPage";
 import { ChallengeDayPage } from "./pages/ChallengeDayPage";
+import { RecoveryDialog } from "./components/RecoveryDialog";
 
 export default function App() {
   const { profile, activePresetId, selectPreset, activateShield, recoverMissedDay, submitProof } = useStudentProfile();
